@@ -13,7 +13,7 @@ However, there are some differences with the listed article:
 - the code in the article only looks at a user defined name in the @Table annotation. The version in this repository:
   - looks at both the @Table annotation (which is an optional annotation) and @Entity annotation (which is always set on an entity)
   - favours a user defined name, but if not set will build a name based on the default naming strategy (snake_case class name)
-- join all table names together and execute one query in which they are all truncated together.
+- joins all table names together and executes one query in which they are all truncated together.
 
 ## Bonus: Hibernate Envers
 
