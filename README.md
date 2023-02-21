@@ -17,9 +17,9 @@ However, there are some differences with the listed article:
 
 ## Bonus: Hibernate Envers
 
-This code can also clean Hibernate Envers if you provide the entity:
+This code can also clean Hibernate Envers auditing tables if you provide the entity:
 ```kotlin
-...
+package ...
 
 import org.hibernate.envers.RevisionEntity
 import org.hibernate.envers.RevisionNumber
@@ -40,3 +40,4 @@ data class RevisionInfo(
     var revtstmp: Long,
 )
 ```
+Because of the cascading truncate this will also clean any linked auditing tables.
